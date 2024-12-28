@@ -1,9 +1,9 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+/*
+# Template Name: iPortfolio
+# Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+# Updated: Jun 29 2024 with Bootstrap v5.3.3
+# Author: BootstrapMade.com
+# License: https://bootstrapmade.com/license/
 */
 
 /*--------------------------------------------------------------
@@ -87,7 +87,8 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
+/*------------------------------
+* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
@@ -540,7 +541,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Landing Section
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
@@ -635,6 +636,7 @@ section,
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .about .content ul strong {
@@ -648,37 +650,8 @@ section,
   line-height: 0;
 }
 
-/*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
-.stats .stats-item {
-  padding: 30px;
-  width: 100%;
-}
-
-.stats .stats-item i {
-  color: var(--accent-color);
-  display: block;
-  font-size: 44px;
-  float: left;
-  line-height: 0;
-}
-
-.stats .stats-item .purecounter {
-  color: var(--heading-color);
-  font-size: 48px;
-  line-height: 40px;
-  display: block;
-  font-weight: 700;
-  margin-left: 60px;
-}
-
-.stats .stats-item p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: var(--heading-font);
-  font-size: 14px;
+.move-left {
+  margin-left: -100px; /* Adjust the value as needed */
 }
 
 /*--------------------------------------------------------------
@@ -780,46 +753,6 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
-  padding: 0;
-  margin: 0 auto 20px auto;
-  list-style: none;
-  text-align: center;
-}
-
-.portfolio .portfolio-filters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 0;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0 10px;
-  line-height: 1;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
-  color: var(--accent-color);
-}
-
-.portfolio .portfolio-filters li:first-child {
-  margin-left: 0;
-}
-
-.portfolio .portfolio-filters li:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 5px;
-  }
-}
-
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
@@ -1050,11 +983,4 @@ section,
 .portfolio-details .portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 }
