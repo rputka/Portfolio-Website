@@ -657,38 +657,24 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
+
+.skills .d-flex img {
+  width: 100px;          /* Set the width */
+  height: 100px;         /* Set the height */
+  object-fit: contain;   /* Ensures the entire image fits inside the container without cropping */
+  margin-right: 15px;    /* Adds space between the images */
+  margin-bottom: 30px
 }
 
-.skills .progress .skill {
-  color: var(--heading-color);
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: var(--heading-font);
+.skills .d-flex img:last-child {
+  margin-right: 0;       /* Removes the margin on the last image */
+}
+.skills-title {
+  font-weight: bold;  /* Makes the text bold */
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
+.skills .d-flex {
+  padding-left: 20px;    /* Adds space to the left of the images, pushing them to the right */
 }
 
 /*--------------------------------------------------------------
